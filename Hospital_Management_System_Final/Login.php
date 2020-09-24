@@ -24,7 +24,7 @@
      
       //===============================================Refresh Patient App_ID====================================
       	$AA="0";
-      	$sqlu = "UPDATE Patient SET App_ID='".$AA."', PDate= '".$cy."' WHERE App_ID > '".$AA."' AND PDate != '".$cy."'";
+      	$sqlu = "UPDATE Patient SET App_ID='".$AA."', PDate= '".$cy."' WHERE  PDate != '".$cy."'";
 
 	    if ($conn->query($sqlu) === TRUE) 
 	    {  
